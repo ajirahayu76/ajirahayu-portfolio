@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Profesional AJI RAHAYU - Mahasiswa Sistem Informasi, Web Developer, dan UI/UX Enthusiast.">
+    <meta name="keywords" content="Aji Rahayu, Portfolio, Web Developer, Sistem Informasi, UI/UX Design">
+    <title>AJI RAHAYU | Futuristic Portfolio</title>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS Utama -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="preloader" id="preloader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p class="loader-text">INITIALIZING SYSTEM</p>
+        </div>
+    </div>
+
+    <!-- Sticky Navbar (Hanya Logo & Tombol Tema) -->
+    <header class="navbar-header">
+        <nav class="navbar container">
+            <a href="#home" class="nav-logo">AJI<span>RAHAYU</span></a>
+            
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+       <!-- Hero Section -->
+<section id="home" class="hero-section">
+    <div class="animated-bg-overlay"></div>
+
+    <div class="container hero-container">
+
+        <!-- LEFT : PROFILE -->
+        <div class="hero-left reveal-fade-right">
+
+            <div class="profile-container-orbit">
+
+                <!-- Orbit Menu -->
+                <ul class="orbit-menu">
+
+                    <li style="--i:0;">
+                        <a href="#home" title="Home">
+                            <i class="fas fa-house"></i>
+                        </a>
+                    </li>
+
+                    <li style="--i:1;">
+                        <a href="#about" title="About">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+
+                    <li style="--i:2;">
+                        <a href="#education" title="Pendidikan">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                    </li>
+
+                    <li style="--i:3;">
+                        <a href="#experience" title="Pengalaman">
+                            <i class="fas fa-briefcase"></i>
+                        </a>
+                    </li>
+
+                    <li style="--i:4;">
+                        <a href="#skills" title="Skills">
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </li>
+
+                    <li style="--i:5;">
+                        <a href="#projects" title="Projects">
+                            <i class="fas fa-diagram-project"></i>
+                        </a>
+                    </li>
+
+                    <li style="--i:6;">
+                        <a href="#contact" title="Contact">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- Profile -->
+                <div class="profile-wrapper">
+
+                    <div class="profile-glowing-border"></div>
+
+                    <div class="profile-image-container">
+                        <img 
+                            src="assets/profile.jpeg"
+                            alt="AJI RAHAYU"
+                            class="profile-img"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT : TEXT -->
+        <div class="hero-right reveal-fade-left">
+
+            <span class="hero-subtitle">
+                WELCOME TO MY DIGITAL REALM
+            </span>
+
+            <h1 class="hero-title">
+                AJI RAHAYU
+            </h1>
+
+            <div class="typing-wrapper">
+                <span class="typing-text" id="typing-engine"></span>
+                <span class="typing-cursor">|</span>
+            </div>
+
+            <div class="hero-cta-group">
+
+                <a href="#" class="btn btn-premium-glow">
+                    Download CV
+                    <i class="fas fa-download"></i>
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    Contact Me
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Scroll Down -->
+    <div class="scroll-down-indicator">
+        <a href="#about">
+
+            <span class="mouse-scroll">
+                <span class="mouse-wheel"></span>
+            </span>
+
+        </a>
+    </div>
+
+</section>
+
+        <!-- About Section -->
+        <section id="about" class="section-padding">
+            <div class="container">
+                <h2 class="section-heading text-center reveal-fade-up">Tentang <span>Saya</span></h2>
+                
+                <div class="about-card glass-card reveal-fade-up">
+                    <div class="about-bio">
+                        <p>
+                            Saya seorang mahasiswa Sistem Informasi yang memiliki minat terhadap teknologi dan pemrograman. Saya senang belajar cara membangun situs web karena saya diajari seperti itu di sekolah. Saya juga belajar tentang database karena memungkinkan saya memproses dan menganalisis data.
+                        </p>
+                        <p>
+                            Saya percaya bahwa pembelajaran berkelanjutan dan kerja tim sangat penting untuk berkembang sebagai profesional IT. Kedepannya, saya berharap bisa menjadi software developer yang mampu membangun aplikasi atau mengelola proyek IT yang bermanfaat bagi banyak orang.
+                        </p>
+                    </div>
+
+                    <!-- Statistics Component -->
+                    <div class="about-stats">
+                        <a href="#projects" class="stat-item glass-card glow-hover" style="display: block; color: inherit; text-decoration: none;">
+                            <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
+                            <span class="stat-number">12+</span>
+                            <span class="stat-label">Project</span>
+                        </a>
+                        <a href="#experience" class="stat-item glass-card glow-hover" style="display: block; color: inherit; text-decoration: none;">
+                            <div class="stat-icon"><i class="fas fa-history"></i></div>
+                            <span class="stat-number">2+ Thn</span>
+                            <span class="stat-label">Experience</span>
+                        </a>
+                        <a href="#education" class="stat-item glass-card glow-hover" style="display: block; color: inherit; text-decoration: none;">
+                            <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <span class="stat-number">Active</span>
+                            <span class="stat-label">Learning</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pendidikan Section -->
+        <section id="education" class="section-padding bg-striped">
+            <div class="container">
+                <h2 class="section-heading text-center reveal-fade-up">Riwayat <span>Pendidikan</span></h2>
+                
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item reveal-fade-right">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2025 - Sekarang</span>
+                            <h3>Universitas Komputama </h3>
+                            <h4>Strata 1 (S1) - Sistem Informasi</h4>
+                            <p>Mendalami arsitektur sistem korporat, manajemen data, rekayasa perangkat lunak serta analisis bisnis teknologi berbasis web modern.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item item-reverse reveal-fade-left">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2020-2023</span>
+                            <h3>SMK / Sekolah Menengah Kejuruan</h3>
+                            <h4>Teknik Otomotif</h4>
+                            <p>Mempelajari dasar-dasar teknik otomotif, perawatan kendaraan, sistem kelistrikan, mesin, serta proses inspeksi dan troubleshooting kendaraan. Selain itu, saya juga dibekali kemampuan kerja tim, disiplin kerja industri, dan pemecahan masalah secara teknis yang menjadi fondasi dalam dunia profesional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pengalaman Kerja Section -->
+        <section id="experience" class="section-padding">
+            <div class="container">
+                <h2 class="section-heading text-center reveal-fade-up">Pengalaman <span>Kerja</span></h2>
+                
+                <div class="experience-wrapper reveal-fade-up">
+                    <div class="experience-premium-card glass-card">
+                        <div class="exp-card-header">
+                            <div class="exp-company-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <div class="exp-meta-info">
+                                <h3 class="exp-company">PT TOYOTA ASTRA MOTOR</h3>
+                                <h4 class="exp-role">Quality Control</h4>
+                                <span class="exp-duration"><i class="far fa-calendar-alt"></i> 2023 – 2025</span>
+                            </div>
+                        </div>
+                        <div class="exp-card-body">
+                            <ul class="exp-responsibility-list">
+                                <li>
+                                    <span class="list-bullet"><i class="fas fa-shield-halved"></i></span>
+                                    <p>Melakukan pemeriksaan kualitas pada setiap tahap produksi untuk memastikan unit memenuhi standar kualitas yang telah ditetapkan.</p>
+                                </li>
+                                <li>
+                                    <span class="list-bullet"><i class="fas fa-shield-halved"></i></span>
+                                    <p>Memberikan masukan dan saran selama tahap pengembangan produk untuk menghindari potensi masalah kualitas.</p>
+                                </li>
+                                <li>
+                                    <span class="list-bullet"><i class="fas fa-shield-halved"></i></span>
+                                    <p>Menyusun laporan secara rinci terkait performa kualitas produk, termasuk ringkasan inspeksi dan analisis data.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skill Section -->
+        <section id="skills" class="section-padding bg-striped">
+            <div class="container">
+                <h2 class="section-heading text-center reveal-fade-up">Technical <span>Skills</span></h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-item-card glass-card reveal-fade-up">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fab fa-html5 skill-brand-html"></i> HTML</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" data-progress="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item-card glass-card reveal-fade-up">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fab fa-css3-alt skill-brand-css"></i> CSS</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" data-progress="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item-card glass-card reveal-fade-up">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fab fa-js skill-brand-js"></i> JavaScript</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" data-progress="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item-card glass-card reveal-fade-up">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fas fa-palette"></i> UI/UX Design</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" data-progress="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item-card glass-card reveal-fade-up">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fab fa-figma skill-brand-figma"></i> Figma</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" data-progress="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item-card glass-card reveal-fade-up">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fab fa-react skill-brand-react"></i> React</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" data-progress="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item-card glass-card reveal-fade-up">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fas fa-wind skill-brand-tailwind"></i> Tailwind CSS</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" data-progress="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item-card glass-card reveal-fade-up">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fab fa-github"></i> GitHub</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" data-progress="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item-card glass-card reveal-fade-up">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fas fa-database skill-brand-db"></i> Database</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" data-progress="80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Project -->
+        <section id="projects" class="section-padding">
+            <div class="container">
+                <h2 class="section-heading text-center reveal-fade-up">My <span>Projects</span></h2>
+                <div class="glass-card reveal-fade-up" style="padding: 40px; text-align: center;">
+                    <i class="fas fa-diagram-project" style="font-size: 3rem; color: var(--primary-color, #00ffff); margin-bottom: 20px;"></i>
+                    <h3>Project Showcase</h3>
+                    <p style="margin-top: 10px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                        Bagian ini terhubung langsung ke ringkasan profil Anda. Semua statistik project, riwayat pembelajaran, dan sistem manajemen database terintegrasi secara dinamis di sini.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <h2 class="section-heading text-center reveal-fade-up">Contact <span>Me</span></h2>
+                
+                <div class="contact-grid">
+                    <div class="contact-sidebar reveal-fade-right">
+                        <div class="info-contact-card glass-card">
+                            <h3>Hubungi Info</h3>
+                            <div class="info-link-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <span>Email</span>
+                                    <p>ajirahayu102533@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="info-link-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <span>Telepon / WA</span>
+                                    <p>+62 83128410958</p>
+                                </div>
+                            </div>
+                            <div class="info-link-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span>Lokasi</span>
+                                    <p>Jakarta, Indonesia</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="maps-placeholder glass-card">
+                            <div class="map-glow-effect"></div>
+                            <i class="fas fa-earth-asia"></i>
+                            <span>INTERACTIVE RADAR ACTIVE</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container glass-card reveal-fade-left">
+                        <form id="portfolio-contact-form" autocomplete="off">
+                            <div class="input-floating-group">
+                                <input type="text" id="form-name" required placeholder=" ">
+                                <label for="form-name">Nama Lengkap</label>
+                            </div>
+                            <div class="input-floating-group">
+                                <input type="email" id="form-email" required placeholder=" ">
+                                <label for="form-email">Alamat Email</label>
+                            </div>
+                            <div class="input-floating-group">
+                                <textarea id="form-message" rows="5" required placeholder=" "></textarea>
+                                <label for="form-message">Isi Pesan Anda</label>
+                            </div>
+                            <button type="submit" class="btn btn-premium-glow w-100">
+                                Kirim Pesan <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-component">
+        <div class="container">
+            <div class="footer-divider"></div>
+            <div class="footer-wrapper">
+                <p class="footer-copyright">&copy; 2026 <span>AJI RAHAYU</span>. All Rights Reserved.</p>
+                
+                <div class="footer-social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- Pure Custom Logic Engine -->
+    <script src="script.js"></script>
+</body>
+</html>
